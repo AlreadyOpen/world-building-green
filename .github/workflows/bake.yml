@@ -1,9 +1,9 @@
-# Bake and publish to Hugging Face (bake.py, publish.py). Manual only in the template: add a schedule in your copy, e.g.
-#   schedule:
-#     - cron: '30 19 * * *'          # 03:30 HKT daily
+# Bake and publish to Hugging Face (bake.py, publish.py), monthly: the World Bank updates Building Green rarely.
 # Each run commits status/last-run.json: GitHub turns schedules off after 60 days with no commits.
 name: bake
 on:
+  schedule:
+    - cron: '0 22 3 * *'           # the 3rd of each month, 22:00 UTC
   workflow_dispatch:
     inputs:
       force:

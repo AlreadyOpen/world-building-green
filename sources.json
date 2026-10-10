@@ -1,3 +1,3 @@
 [
- {"name": "Example dataset (replace)", "owner": "Example Owner", "url": "https://example.org/data.csv", "licence": "https://example.org/terms", "used_by": "bake.py"}
+ {"name": "Building Green dataset (building energy codes and enforcement), 13 May 2024", "owner": "World Bank", "url": "https://www.worldbank.org/en/building-green", "licence": "https://documents1.worldbank.org/curated/en/099718504112546491/pdf/IDU-1d303826-4a43-4eff-8649-1052aa316783.pdf", "used_by": "bake.py"}
 ]

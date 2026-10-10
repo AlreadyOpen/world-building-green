@@ -8,10 +8,10 @@ import json, os
 from huggingface_hub import HfApi, batch_bucket_files, create_bucket
 import manifest, sources
 
-REPO = 'alreadyopen/REPLACE-ME'
-DATASET_FILES = ['index.json']                                         # e.g. the Parquet files
-BUCKET_FILES = ['index.json']                                          # e.g. the PMTiles, JSON tiles
-KAGGLE = ('helenkwok/REPLACE-ME', 'AlreadyOpen: REPLACE ME')            # mirrored by kaggle_mirror.py (title 6-50 chars)
+REPO = 'alreadyopen/world-building-green'
+DATASET_FILES = ['index.json', 'building-green.json', 'building-green.xlsx']
+BUCKET_FILES = ['index.json', 'building-green.json']                   # the map reads the JSON
+KAGGLE = ('helenkwok/world-building-green', 'AlreadyOpen: Building Green (World Bank)')            # mirrored by kaggle_mirror.py (title 6-50 chars)
 
 def main():
     o = lambda f: os.path.join(sources.OUT, f); idx = json.load(open(o('index.json')))
